@@ -132,15 +132,19 @@ Productivity Notes（工程效率宝典）
 
 ⸻
 
-3.2 代码导航视频（我认为是最关键的两个）
+3.2 代码导航视频
 
 Fabian Jahr – Debugging Bitcoin Core
 	•	Link: https://www.youtube.com/watch?v=6aPSCDAiqVI
 用途：新人的调试入门视频，是“怎么看懂代码路径”的最佳资源。
 
-James O’Beirne – Bitcoin Core Architecture Overview
+James O'Beirne – Bitcoin Core Architecture Overview
 	•	Link: https://www.youtube.com/watch?v=L_sI_tXmy2U
 用途：最高质量的 Bitcoin Core 架构鸟瞰图。
+
+*注：顺着James O'Beirne的课程介绍，我把Bitcoin Edge Dev++ 课程集合也介绍一下（很好的集合，虽然老了一些）*
+	•	Link: https://www.youtube.com/@BitcoinEdge/playlists
+*用途：Dev++ 的完整课程集合，涵盖共识、脚本、UTXO、网络层、软分叉机制等核心主题。*
 
 ⸻
 
