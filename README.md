@@ -30,7 +30,7 @@ The goal:
 - 与 Bitcoin Core 入门相关的 **原文文章、演讲与资源**  
 - 我整理的 **高质量中文翻译**  
 - 我作为开发者写下的 **技术批注与反思**  
-- 从每篇文章中提炼出来的 **学习路径与资源地图**
+- 从每篇文章中提炼的 **学习路径与资源地图**
 
 目标是：
 
@@ -44,76 +44,93 @@ The goal:
 
 Current structure:
 
-```text
+```
 bitcoin-core-onboarding/
 ├── README.md
 └── 01-onboarding-to-bitcoin-core/
-    ├── original.md               # Original article info & citation
-    ├── faithful-translation.md   # 忠实中译
-    ├── commentary.md             # 我的批注 & 延伸理解
-    └── learning-map.md           # 从本文中提炼的学习资源地图
+    ├── original.md
+    ├── faithful-translation.md
+    ├── commentary.md
+    └── learning-map.md
+```
 
 随着阅读与翻译的积累，我会继续添加新的目录，例如：
+
+```
 02-xxxx/
 03-xxxx/
 ...
-当文章和批注足够多时，会再整体重构为一个
-全局学习地图（如 resources/global-learning-map.md），帮助读者按主题而不是按原文顺序学习。
+```
+当文章与批注积累到一定规模，我会将其进一步整理为一个全局学习地图，例如：
 
-3. Licensing & attribution / 版权与引用说明
-	•	All original articles, blog posts and talks referenced here
-remain under their original authors’ copyrights.
+```
+resources/
+└── global-learning-map.md
+```
+
+该文件将帮助读者按照主题（如脚本、共识、网络、测试框架、C++ 等）系统性学习，而不是按原文顺序阅读。
+
+---
+
+## 3. Licensing & attribution / 版权与引用说明
+
+All original articles, blog posts, and talks referenced here remain under their original authors’ copyrights.  
 This repo only stores:
-	•	Metadata (title, author, link), and
-	•	My own translation and commentary as transformative work.
-	•	If you are an original author and would like me to update or remove
-something, please open an issue or contact me.
 
-⸻
+- Metadata (title, author, link)  
+- My own translation and commentary as transformative work
 
-	•	本仓库所引用的原文文章、博客与演讲，版权均归原作者所有。
-仓库中保存的是：
-	•	原文的标题、作者与链接信息；
-	•	以及我基于原文撰写的翻译与批注（属于二次创作）。
-	•	如果你是原作者，并对本仓库中的整理方式有意见，欢迎通过 issue 或邮件与我联系，我会及时调整。
+If you are an original author and would like me to update or remove something, please open an issue.
 
-⸻
+---
 
-4. How to use this repo / 如何使用本仓库
+本仓库所引用的原文文章、博客与演讲，其版权均归原作者所有。  
+本仓库仅保存：
+
+- 原文的标题、作者与链接  
+- 我基于原文撰写的翻译与批注（属于二次创作）
+
+如原作者希望更新或移除内容，欢迎通过 issue 与我联系。
+
+---
+
+## 4. How to use this repo / 如何使用本仓库
 
 For developers:
-	•	Browse the folders by number (01-, 02-, …).
-	•	Start with:
-	•	faithful-translation.md if you prefer reading in Chinese;
-	•	original.md if you want to follow the original English;
-	•	commentary.md if you want my distilled takeaways;
-	•	learning-map.md if you mainly want the resource graph.
+
+- Browse the folders in numerical order (01-, 02-, …)  
+- Read:
+  - `original.md` for the original English  
+  - `faithful-translation.md` for high-fidelity Chinese  
+  - `commentary.md` for distilled insights  
+  - `learning-map.md` for all extracted resources
 
 For Chinese readers:
-	•	可以按编号顺序阅读每一篇：
-	•	想先了解原始语境：从 original.md 开始；
-	•	想直接看中文：读 faithful-translation.md；
-	•	想看「干货总结与开发者视角」：读 commentary.md；
-	•	想快速找到所有提到的资料与链接：看 learning-map.md。
 
-⸻
+- 按编号顺序阅读每篇内容  
+- 想看英文原文：阅读 `original.md`  
+- 想快速进入中文：阅读 `faithful-translation.md`  
+- 想看我的精华总结：阅读 `commentary.md`  
+- 想快速掌握所有资料链接：阅读 `learning-map.md`
 
-5. My personal context / 作者背景（简要）
+---
 
-I am working on Bitcoin script & Taproot engineering,
-and writing an in-depth book tentatively titled
+## 5. My personal context / 作者背景（简要）
 
-“Mastering Taproot”
+I currently focus on **Bitcoin programming, developer education,  
+and engineering practices built on top of the Taproot upgrade**.  
+I am also writing a developer-focused technical book titled:
 
-This onboarding-notes repo is a parallel project:
-it documents how I myself enter the Bitcoin Core codebase and culture,
-in the hope that others can reuse the same path with less friction.
+**“Mastering Taproot”**
 
-⸻
+This repo documents my own onboarding path into Bitcoin Core.
 
-我目前专注于 Bitcoin Script 与 Taproot 工程实践，
-并在撰写一本面向开发者的技术书籍（暂定名为《Mastering Taproot》）。
+---
 
-本仓库是一个与之并行的长期项目：
-记录我自己如何进入 Bitcoin Core 代码库与社区文化，
-也希望未来的开发者可以在这条路径上少走弯路。
+我目前专注于 **Bitcoin 编程、开发者教育，以及基于 Taproot 升级的工程实践**，  
+并在撰写一本面向开发者的技术书籍：
+
+**《Mastering Taproot》**
+
+本仓库记录了我进入 Bitcoin Core 代码库与社区文化的路径，  
+也希望未来的开发者可以复用这条路线。
